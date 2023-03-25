@@ -511,7 +511,9 @@ header {
   left: 50%;
 }
 .modal-close {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   height: 24px;
   border-radius: 50%;
