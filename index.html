@@ -37,7 +37,7 @@
               <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-list-item">
-              <a class="header-link link" href="">Contacts</a>
+              <a class="header-link link curent" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -64,7 +64,7 @@
           <h1 class="studio-section-hero-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="studio-section-hero-btn" type="button">
+          <button class="studio-section-hero-btn" data-modal-open type="button" >
             Order Service
           </button>
         </div>
@@ -397,5 +397,14 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close">
+           <svg width="8" height="8" class="modal-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
