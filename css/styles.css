@@ -19,7 +19,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--color-slate);
 }
-/*NEW*/
 p,
 h1,
 h2,
@@ -44,7 +43,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -59,14 +57,12 @@ header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
 .header-conainer {
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
 }
-
 .logotype {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -77,28 +73,21 @@ header {
   color: var(--color-iris);
   margin-right: 76px;
 }
-
 .logotype span {
   color: var(--color-grey);
 }
 .menu-nav {
   display: flex;
 }
-
 .list {
   list-style-type: none;
 }
-/*.header-list-item {
-  position: relative;
-}*/
 .header-list-item:not(:last-child) {
   margin-right: 40px;
 }
-/*End NEW*/
 .link {
   text-decoration: none;
 }
-
 .header-link {
   font-weight: 500;
   font-size: 16px;
@@ -108,6 +97,10 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   display: block;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--color-ocean);
 }
 .header-link::after {
   content: "";
@@ -122,7 +115,6 @@ header {
   border-radius: 2px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .header-link:hover::after,
 .header-link:focus::after,
 .header-link.current::after {
@@ -148,13 +140,11 @@ header {
 .address-item:not(:last-child) {
   margin-right: 40px;
 }
-
 /* main content page Studio*/
 .section {
   padding-bottom: 120px;
   padding-top: 120px;
 }
-
 .studio-section-hero {
   background-color: var(--color-grey);
   padding: 180px 0;
@@ -202,9 +192,7 @@ header {
 .studio-section-hero-btn:hover {
   background: var(--color-ocean);
 }
-
 /*section*/
-
 .sections-litle-titles {
   font-weight: 500;
   font-size: 20px;
@@ -244,7 +232,6 @@ header {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .section-one-list {
   display: flex;
   justify-content: space-between;
@@ -262,7 +249,6 @@ header {
   background-color: var(--color-cloud);
   margin-bottom: 8px;
 }
-
 .section-our-team {
   background: var(--color-cloud);
 }
@@ -349,7 +335,7 @@ header {
 .customers-link:focus .customers-icon {
   fill: var(--color-ocean);
 }
-/*footer*/
+/*----------------footer----------------------------*/
 .footer {
   background: var(--color-grey);
   padding: 100px 0px;
@@ -368,7 +354,6 @@ header {
   letter-spacing: 0.02em;
   color: var(--color-cornflower);
 }
-
 .footer-wrap {
   display: flex;
 }
@@ -408,7 +393,7 @@ header {
 .footer-social-media-icon {
   fill: var(--color-white);
 }
-/*Page Portfolio*/
+/*------------------Page Portfolio-----------------------*/
 .portfolio-section {
   padding-top: 96px;
 }
@@ -435,7 +420,6 @@ header {
   gap: 24px;
   margin: 0 auto 72px;
 }
-
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background: var(--color-ocean);
@@ -451,6 +435,7 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--color-slate);
 }
 .portfolio-img-list {
   display: flex;
@@ -498,7 +483,6 @@ header {
   transform: translateY(100%);
   transition: transform 250ms linear;
 }
-
 .portfolio-card-text {
   border-right: 1px solid var(--color-cornflower);
   border-bottom: 1px solid var(--color-cornflower);
@@ -511,6 +495,7 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   width: 400px;
@@ -522,7 +507,6 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
   width: 24px;
@@ -536,6 +520,7 @@ header {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover,
 .modal-close:focus {
